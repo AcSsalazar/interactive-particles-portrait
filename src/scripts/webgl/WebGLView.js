@@ -1,5 +1,7 @@
-import 'three';
-import { TweenLite } from 'gsap/TweenMax';
+import * as THREE from 'three';
+
+import { gsap } from 'gsap';
+
 
 import InteractiveControls from './controls/InteractiveControls';
 import Particles from './particles/Particles';
@@ -12,11 +14,12 @@ export default class WebGLView {
 		this.app = app;
 
 		this.samples = [
-			'images/sample-01.png',
-			'images/sample-02.png',
-			'images/sample-03.png',
-			'images/sample-04.png',
-			'images/sample-05.png',
+			'/static/images/sample-01.png',
+			'/static/images/sample-02.png',
+			'/static/images/sample-03.png',
+			'/static/images/sample-04.png',
+			'/static/images/sample-05.png',
+			'/static/images/1.png',
 		];
 
 		this.initThree();
